@@ -1,15 +1,7 @@
 import styled, { createGlobalStyle } from 'styled-components'
 import img from '../images/wave.png'
 import imageback from '../images/circle.png'
-
-
-const colorBackground = '#0E091B';
-const textColor = '#04D361';
-const secColor = '#171220';
-const colorMain = '#340E71';
-const bntColor = "#2E2740";
-const font = "'Oswald', sans-serif";
-
+import {colorBackground,textColor,secColor,colorMain,bntColor,font} from './global'
 
 export const header = styled.header`
   background-color: ${colorBackground};
