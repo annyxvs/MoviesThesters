@@ -64,13 +64,16 @@ export const title = styled.h1`
 
   font-size: 1.5rem;
 
+  display: flex;
+  flex-direction: column;
+
   span{
     padding: 0.2rem;
     border-radius: 0.5rem;
 
     background-color: ${textColor};
 
-    color: ${secColor}
+    color: ${secColor};
   }
 `
 
