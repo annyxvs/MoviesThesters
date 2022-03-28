@@ -1,5 +1,7 @@
 import Header from '../components/Header';
+import * as G from '../styles/global'
 import * as S from '../styles/style'
+import * as M from '../styles/movies'
 import { useState } from 'react';
 import { useEffect } from 'react';
 import { Movie } from '../types/movie';
@@ -22,24 +24,24 @@ const Movies = () =>{
   }
 
   return(
-    <S.conteiner>
-      <S.movies>
+    <G.conteiner>
+      <M.movies>
         <Header/>
 
         {loading &&
           <S.loading>Loading...</S.loading>
         }
         
-        <S.listMovies>
+        <M.listMovies>
           {movies.map((item,index)=>(
-            <S.card_movies>
+            <M.card_movies>
               <img src={item.avatar} alt={item.titulo}/>
               <p>{item.titulo}</p>
-            </S.card_movies>
+            </M.card_movies>
           ))}
-        </S.listMovies>
-      </S.movies>
-    </S.conteiner>
+        </M.listMovies>
+      </M.movies>
+    </G.conteiner>
   )
 }
 

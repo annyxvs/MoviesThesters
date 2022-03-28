@@ -1,6 +1,5 @@
 import styled, { createGlobalStyle } from 'styled-components'
 import img from '../images/wave.png'
-import imageback from '../images/circle.png'
 import {colorBackground,textColor,secColor,colorMain,bntColor,font} from './global'
 
 export const header = styled.header`
@@ -75,12 +74,6 @@ export const title = styled.h1`
   }
 `
 
-export const conteiner = styled.div`
-  display:flex;
-  
-  overflow: hidden;
-`
-
 export const main = styled.div`
   background: url(${img});
   background-size: contain;
@@ -130,52 +123,6 @@ export const text = styled.p`
   margin-top: 12rem;
 `
 
-export const movies = styled.div`
-  color: ${textColor};
-  
-  display: flex;
-  width: 100vw;
-  height: auto;
-
-  background-image: url(${imageback});
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  header{
-    height: auto;
-    padding: 0.5rem;
-  }
-`
-
-export const listMovies = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-
-  margin: 2rem;
-
-  text-transform: uppercase;
-
-
-  img{
-    width: 13vw;
-    height: 35vh;
-  } 
-`
-
-export const card_movies = styled.div`
-  border: 2px ${colorBackground} solid;
-  border-radius: 0.2rem;
-  background-color: ${colorBackground};
-
-  padding: 0.3rem;
-  padding-top: 1rem;
-  margin: 0.7rem;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-`
 export const loading = styled.div`
   width: 100vw;
   height: 100vh;

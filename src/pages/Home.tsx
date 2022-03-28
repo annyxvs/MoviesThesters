@@ -1,11 +1,12 @@
 import Header from "../components/Header";
 import Img_main from '../images/entretenimento.png'
 import * as S from '../styles/style'
+import * as G from '../styles/global'
 import { AiFillStar } from 'react-icons/ai'
 
 const Home = () =>{
   return(
-     <S.conteiner>
+     <G.conteiner>
        <Header/>
         <S.main>
           <S.grid>
@@ -24,7 +25,7 @@ const Home = () =>{
 
           </S.grid>
         </S.main>
-     </S.conteiner>
+     </G.conteiner>
 
   )
 }
