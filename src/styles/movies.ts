@@ -25,6 +25,17 @@ export const listMovies = styled.div`
 
   text-transform: uppercase;
 
+  @media (max-width: 1020px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media (max-width: 790px) {
+    grid-template-columns: 1fr;
+    
+    img{
+      display: none;
+    }
+  }
 
   img{
     width: 13vw;

@@ -78,8 +78,8 @@ export const title = styled.h1`
 `
 
 export const main = styled.div`
-  background: url(${img});
-  background-size: contain;
+  background-color: black;
+
   color: ${textColor};
   
   display: flex;
@@ -96,6 +96,24 @@ export const grid = styled.div`
   aside{
     margin-left: 5rem;
     margin-top: 1.5rem;
+  }
+
+  @media (max-width: 810px) {
+    display: flex;
+    flex-direction: column;
+
+    aside{
+      margin-left: 0rem;
+    }
+  }
+
+  @media (max-width: 600px) {
+
+    margin: 1rem;
+
+    aside{
+      display: none;
+    }
   }
 `
 
