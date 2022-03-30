@@ -148,14 +148,14 @@ export const loading = styled.div`
   width: 100vw;
   height: 100vh;
 
-  padding-left: 10rem;
-
   display: flex;
   align-items: center;
+  text-align: center;
   font-size: 3rem;
   text-transform: uppercase;
 
   font-family: ${font};
+  font-weight: bold ;
 
   background-color: ${colorBackground};
 `
